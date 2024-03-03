@@ -7,6 +7,8 @@ btn.addEventListener('click', () => {
     nav.classList.toggle('hidden')
 })
 
+// Testimonial Pagination
+
 document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     const testimonials = document.querySelectorAll('.testimonial')
