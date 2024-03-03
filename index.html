@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintekk Landing-Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto py-6 px-36">
+        <!-- Flex Container -->
+        <div class="flex items-center justify-between">
+
+            <!-- logo -->
+            <div class="pt-2">
+                <a href="#">
+                    <h2 class="text-[#2E5CFF] font-semibold text-lg">Fintekk</h2>
+                </a>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="hidden space-x-8 md:flex">
+                <a href="#" class="hover:text-blue-500 text-sm font-normal">Home</a>
+                <a href="#" class="hover:text-blue-500 text-sm font-normal">About</a>
+                <a href="#" class="hover:text-blue-500 text-sm font-normal">FAQS</a>
+                <a href="#" class="hover:text-blue-500 text-sm font-normal">Contact Us</a>
+            </div>
+
+            <!-- Button -->
+            <div class="space-x-4 hidden md:block">
+                <a href="#" class="rounded-lg text-[#2E5CFF] bg-white text-xs border border-[#2E5CFF] py-2 px-4 hover:bg-[#2E5CFF] hover:text-white">Login</a>
+                <a href="#" class="rounded-lg text-white bg-[#2E5CFF] text-xs py-2 px-4 hover:bg-white hover:text-[#2E5CFF]  hover:ring-1">Sign Up For Free</a>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-4 right-4 drop-shadow-md">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">FAQS</a>
+                <a href="#">Contact Us</a>
+                <div class="flex flex-row space-x-4">
+                    <a href="#" class="rounded-lg text-[#2E5CFF] bg-white text-xs border border-[#2E5CFF] py-2 px-4 hover:bg-[#2E5CFF] hover:text-white">Login</a>
+                    <a href="#" class="rounded-lg text-white bg-[#2E5CFF] text-xs py-2 px-4 hover:bg-white hover:text-[#2E5CFF]  hover:ring-1">Sign Up For Free</a>
+                </div>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Horizontal line -->
+    <div class="h-1 bg-blue-100 w-full"></div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <!-- Flex Container -->
+        <div class="container mx-auto py-6 flex flex-col-reverse items-center px-36 md:flex-row">
+            <!-- Left Item -->
+            <div class="flex flex-col space-y-4 md:w-1/2">
+                <h1 class="text-4xl text-[#172E80] font-semibold w-80 leading-relaxed">Pay, Invest, Save your Cash with a single bank</h1>
+                <p class="text-sm text-gray-500 w-80 leading-normal tracking-wider">Fintekk is the bank that does it all. Manage everything directly and easy with fintekk</p>
+                <div>
+                    <a href="#" class="rounded-lg text-white bg-[#2E5CFF] text-xs py-2 px-4 hover:bg-white hover:text-[#2E5CFF]  hover:ring-1">Sign Up For Free</a>
+                </div>
+                <!-- Buttons Container -->
+                <div class="flex flex-row space-x-4 py-5">
+                    <!-- First Button -->
+                    <div class="flex flex-row space-x-2 rounded-xl border-2 align-middle justify-center text-center items-center p-2">
+                        <img src="./img/Andriod_logo.png" class="w-3 h-3" alt="Andriod_logo">
+                        <a href="#" class="text-xs text-gray-500">Get on Andriod</a>
+                    </div>
+                    <!-- Second Button -->
+                    <div class="flex flex-row space-x-2 rounded-xl border-2 align-middle justify-center text-center items-center p-2">
+                        <img src="./img/Apple_logo_black logo.png" class="w-3 h-3" alt="Apple_logo">
+                        <a href="#" class="text-xs text-gray-500">Get on Iphone</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Right Item -->
+            <div class="md:w-1/2">
+                <img src="./img/hero_image.png" class="" alt="hero_image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponspors" class="bg-[#FBFBFB]">
+        <!-- Flex container -->
+        <div class="container mx-auto flex flex-row justify-between space-x-6 py-4 items-center px-36">
+            <img src="./img/bloomberg logo.png" alt="blooberg_logo" class="w-32 h-8">
+            <img src="./img/CNBC logo.png" alt="cnbc_logo" class="w-14 h-10">
+            <img src="./img/Forbes logo.png" alt="Forbes_logo" class="w-32 h-10">
+            <img src="./img/stripe logo.png" alt="stripe_logo" class="w-30 h-8">
+            <img src="./img/Quartz logo.png" alt="quartz_logo" class="w-32 h-4">
+        </div>
+    </section>
+
+    <!-- Active Users Container -->
+    <section id="active_user" class="bg-white">
+        <!-- Flex Container -->
+        <div class="container mx-auto text-center py-10 w-2/5">
+            <h2 class="text-4xl font-bold leading-relaxed text-[#172E80]">More than <span class="text-[#2E5CFF]">10,000</span> active users trust Fintekk</h2>
+        </div>
+    </section>
+
+    <!-- Our Services Container -->
+    <section id="ourservices" class="bg-[#FBFBFB]">
+        <div class="container mx-auto justify-center items-center flex flex-col space-y-4 py-10">
+            <h2 class="font-medium text-gray-600">OUR SERVICES</h2>
+            <h3 class="font-semibold text-[#172E80] tracking-wider text-2xl">What we offer</h3>
+            <p class="text-xs text-gray-500 w-2/5 text-center">We help individuals become flexible and responsible with their finances and handle payments smooth and easy</p>
+        </div>
+
+        <!-- Card Container -->
+        <div class="container mx-auto flex flex-col md:flex-row md:space-x-10 py-10 px-36">
+            <!-- First Card Container -->
+            <div class="flex flex-col px-6 bg-[#F4F6FF] rounded-lg space-y-6 py-6 w-1/3">
+                <h1 class="text-3xl text-[#172E80] font-semibold">Easy Payment</h1>
+                <p class="text-xs text-gray-500">Stress-free payment for all transactions that you do at any time</p>
+                <div>
+                    <button class="inline-flex flex-row gap-2 py-4 align-middle items-center">
+                        <p class="text-[#2E5CFF]">Read More</p>
+                        <img src="./img/right_arrow.png" class="text-[#2E5CFF]" alt="arrow">
+                    </button>
+                </div>
+                <div class="mx-auto">
+                    <img src="./img/Easy payment.png" class="" alt="investment_image">
+                </div>
+            </div>
+
+            <!-- Second Card Container -->
+            <div class="flex flex-col px-6 bg-[#FEF7F1] rounded-lg space-y-6 py-6 w-1/3">
+                <h1 class="text-3xl text-[#172E80] font-semibold">Investments</h1>
+                <p class="text-xs text-gray-500">Grow your money by investing in prevetted investment opportunities</p>
+                <div>
+                    <button class="inline-flex flex-row gap-2 py-4 align-middle items-center">
+                        <p class="text-[#2E5CFF]">Read More</p>
+                        <img src="./img/right_arrow.png" class="text-[#2E5CFF]" alt="arrow">
+                    </button>
+                </div>
+                <div class="mx-auto">
+                    <img src="./img/Investment.png" class="" alt="investment_image">
+                </div>
+            </div>
+
+            <!-- Third Card Container -->
+            <div class="flex flex-col px-6 bg-[#F4F6FF] rounded-lg space-y-6 py-6 w-1/3">
+                <h1 class="text-3xl text-[#172E80] font-semibold">Fixed Savings</h1>
+                <p class="text-xs text-gray-500">Build a dedicated savings faster on your terms automatically or manuallys</p>
+                <div>
+                    <button class="inline-flex flex-row gap-2 py-4 align-middle items-center">
+                        <p class="text-[#2E5CFF]">Read More</p>
+                        <img src="./img/right_arrow.png" class="text-[#2E5CFF]" alt="arrow">
+                    </button>
+
+                </div>
+                <div class="mx-auto">
+                    <img src="./img/fixed savings_image.png" class="" alt="investment_image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Journey Container -->
+    <section id="start_journey">
+        <!-- Flex Container -->
+        <div class="container mx-auto pt-20 px-36 flex flex-col-reverse md:flex-row md:space-x-6">
+            <!-- Left Item -->
+            <div class="md:w-1/2">
+                <img src="./img/mobile design_frame.png" class="object-contain h-2/3 w-96" alt="mobile_phone_frame">
+            </div>
+            <!-- Right Item -->
+            <div class="flex flex-col space-y-6 md:w-1/2">
+                <h2 class="text-4xl text-[#172E80] leading-relaxed font-bold">Start the journey to reach your financial goals today</h2>
+                <!-- First Paragraph -->
+                <div class="flex flex-col align-middle space-y-4">
+                    <div class="flex items-start space-x-4">
+                        <h2 class="text-md text-[#2E5CFF] font-semibold">01</h2>
+                        <!-- <h2 class="w-0 h-20 border-l-0.5 border-[#2E5CFF]"></h2> -->
+                        <h1 class="text-md text-[#172E80] font-semibold">Download the mobile app</h1>
+                    </div>
+                    <div class="flex items-start space-x-6">
+                        <!-- <h1 class="text-3xl text-[#172E80] font-semibold">Download the mobile app</h1> -->
+                        <h2 class="w-0 h-20 border-l-0.5 border-[#2E5CFF] ml-2"></h2>
+                        <p class="text-md text-gray-500 w-96">Sign up for an account with your name, email and phone number</p>
+                    </div>
+                </div>
+                <!-- Second Paragraph -->
+                <div class="flex flex-col align-middle space-y-4">
+                    <div class="flex items-start space-x-4">
+                        <h2 class="text-md text-[#2E5CFF] font-semibold">02</h2>
+                        <!-- <h2 class="w-0 h-20 border-l-0.5 border-[#2E5CFF]"></h2> -->
+                        <h1 class="text-md text-[#172E80] font-semibold">Create a free account</h1>
+                    </div>
+                    <div class="flex items-start space-x-6">
+                        <!-- <h1 class="text-3xl text-[#172E80] font-semibold">Download the mobile app</h1> -->
+                        <h2 class="w-0 h-20 border-l-0.5 border-[#2E5CFF] ml-2"></h2>
+                        <p class="text-md text-gray-500 w-96">Sign up for an account with your name, email and phone number</p>
+                    </div>
+                </div>
+                <!-- Third Paragraph -->
+                <div class="flex flex-col align-middle space-y-4">
+                    <div class="flex items-start space-x-4">
+                        <h2 class="text-md text-[#2E5CFF] font-semibold">03</h2>
+                        <!-- <h2 class="w-0 h-20 border-l-0.5 border-[#2E5CFF]"></h2> -->
+                        <h1 class="text-md text-[#172E80] font-semibold">Add a payment method</h1>
+                    </div>
+                    <div class="flex items-start space-x-6">
+                        <!-- <h1 class="text-3xl text-[#172E80] font-semibold">Download the mobile app</h1> -->
+                        <h2 class="w-0 h-20 border-l-0.5 border-[#2E5CFF] ml-2 invisible"></h2>
+                        <p class="text-md text-gray-500 w-96">Using your debit card bank account code, perform your first transaction.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="container mx-auto justify-center items-center text-center py-10 -mt-64">
+        <a href="#" class="rounded-lg text-white bg-[#2E5CFF] text-xs py-2 px-4 hover:bg-white hover:text-[#2E5CFF]  hover:ring-1">Download Now</a>
+    </div>
+
+    <!-- FAQ Container -->
+    <section id="faqs">
+        <!-- Flex Container -->
+        <div class=" flex flex-col-reverse py-6 mb-20 md:flex-row">
+            <!-- Left Item -->
+            <div class="w-1/2 space-y-10 bg-[#2E5CFF] p-20">
+                <h2 class="font-bold text-5xl text-white">FAQs</h2>
+                <div class="collapse collapse-arrow bg-base-200 rounded-md">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title font-normal text-sm text-white bg-[#2E5CFF] border-solid border-2 border-white">
+                        Is fintekk's security guaranteed
+                    </div>
+                    <div class="collapse-content">
+                        <p class="rounded-md border-t-2 py-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate veniam deserunt sunt architecto fugiat sapiente rem quae rerum beatae. Molestiae molestias esse officia doloribus quaerat.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200 rounded-md">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title font-normal text-sm text-white bg-[#2E5CFF] border-solid border-2 border-white">
+                        How to activate Fintekk account
+                    </div>
+                    <div class="collapse-content">
+                        <p class="rounded-md border-t-2 py-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate veniam deserunt sunt architecto fugiat sapiente rem quae rerum beatae. Molestiae molestias esse officia doloribus quaerat.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200 rounded-md">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title font-normal text-sm text-white bg-[#2E5CFF] border-solid border-2 border-white">
+                        What should I do if I forget my pin
+                    </div>
+                    <div class="collapse-content">
+                        <p class="rounded-md border-t-2 py-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate veniam deserunt sunt architecto fugiat sapiente rem quae rerum beatae. Molestiae molestias esse officia doloribus quaerat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Item -->
+            <div class="bg-[#FAFAFA] w-1/2">
+                <img src="./img/FAQs_image.png" alt="FAQs">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Container -->
+    <section id="testimonial" class="bg-[#FBFBFB]">
+        <!-- Flex Container -->
+        <div class="container mx-auto py-20 px-36 flex flex-row space-x-4">
+            <!-- Left Item -->
+            <div class="flex flex-col space-y-4 w-1/2">
+                <p class="text-lg font-medium">TESTIMONIALS</p>
+                <p class="text-4xl text-[#172E80] font-semibold w-3/4">What Our Customers Say About Us</p>
+            </div>
+
+            <!-- Right Item / Testimonial Container -->
+            <div class="testimonials-container bg-white rounded-md py-8 flex flex-col space-y-4 px-8 w-1/2">
+                <!-- Testimonial 1 -->
+                <div class="testimonial space-y-4">
+                    <div>
+                        <p class="text-sm">Dealt with enquiry and subsequent order efficiently and quickly. So pleased with price and service I oredered a second one</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex flex-col space-y-4">
+                            <p class="text-[#172E80] text-sm font-semibold">Maryam Adegoke</p>
+                            <img src="./img/testimonial_stars.png" alt="ratings" class="object-contain w-24">
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial hidden space-y-4">
+                    <div>
+                        <p class="text-sm">This fintekk is a grate place to be, their innovative approach is top-notch</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex flex-col space-y-4">
+                            <p class="text-[#172E80] text-sm font-semibold">Taiwo Ayomide</p>
+                            <img src="./img/testimonial_stars.png" alt="ratings" class="object-contain w-24">
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial hidden space-y-4">
+                    <div>
+                        <p class="text-sm">Fintekk is an excellent platform is start your tech journey from</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex flex-col space-y-4">
+                            <p class="text-[#172E80] text-sm font-semibold">Johnson Francis</p>
+                            <img src="./img/testimonial_stars.png" alt="ratings" class="object-contain w-24">
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="testimonial hidden space-y-4">
+                    <div>
+                        <p class="text-sm">It's going to be a great priviledge to journey with fintekk again in the next cohort</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex flex-col space-y-4">
+                            <p class="text-[#172E80] text-sm font-semibold">Tolulope Adekogbe</p>
+                            <img src="./img/testimonial_stars.png" alt="ratings" class="object-contain w-24">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div id="pagination" class="flex flex-col align-middle items-center text-center space-y-2">
+                <button id="prevBtn"><img src="./img/up arrow.png" alt="up_arrow"></button>
+                <!-- Update using buttons -->
+                <button class="page-link rounded-full w-5 h-5 bg-[#172E80] text-white text-xs flex items-center justify-center align-middle" data-index="0">1</button>
+                <button class="page-link" data-index="1">2</button>
+                <button class="page-link" data-index="2">3</button>
+                <button class="page-link" data-index="3">4</button>
+                <button id="nextBtn"><img src="./img/down arrow.png" alt="down_arrow"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Growing Container -->
+    <section id="start_growing" class="bg-white">
+        <!-- Flex Container -->
+        <div class="container mx-auto flex flex-col p-36">
+            <!-- Main Item -->
+            <div class="py-20 space-y-4 bg-[#2E5CFF] rounded-3xl flex flex-col items-center">
+                <h2 class="text-4xl font-semibold text-white w-96 text-center">Start Growing your wealth today</h2>
+                <div>
+                    <form class="flex justify-center items-center border rounded-full">
+                        <input type="email" placeholder="Enter your email address" class="bg-[#2E5CFF] px-6 rounded-2xl text-xs text-white placeholder-gray-300 focus:border-none focus:ring-0 focus:outline-none">
+                        <button type="submit" class="bg-gray-100 text-black hover:bg-blue-500 text-xs font-semibold hover:text-white py-2 px-4 hover:border-transparent rounded-full">
+                          Sign up
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer_section" class="bg-[#FBFBFB]">
+        <!-- Flex Container -->
+        <div class="container mx-auto px-36 py-20 flex flex-col md:space-x-10 md:flex-row">
+            <!-- logo Item -->
+            <div class="space-y-4 md:w-1/5">
+                <a href="#">
+                    <h2 class="text-[#2E5CFF] font-semibold text-lg">Fintekk</h2>
+                </a>
+                <p class="text-xs text-gray-400 w-[18rem]">Fintekk is the bank that does it all. Manage everything directly and easy with fintekk.</p>
+            </div>
+            <!-- Company Items -->
+            <div class="space-y-4 flex flex-col md:w-1/5">
+                <a href="" class="font-semibold text-[#172E80]">Company</a>
+                <a href="" class="text-xs text-[##172E80]">Careers</a>
+                <a href="" class="text-xs text-[##172E80]">About Us</a>
+                <a href="" class="text-xs text-[##172E80]">Privacy</a>
+                <a href="" class="text-xs text-[##172E80]">Terms</a>
+            </div>
+            <!-- Services Items -->
+            <div class="space-y-4 flex flex-col md:w-1/5">
+                <a href="" class="font-semibold text-[#172E80]">Services</a>
+                <a href="" class="text-xs text-[#172E80]">Payments</a>
+                <a href="" class="text-xs text-[#172E80]">Investments</a>
+                <a href="" class="text-xs text-[#172E80]">Savings Plans</a>
+            </div>
+            <!-- Resources Items -->
+            <div class="space-y-4 flex flex-col md:w-1/5 ">
+                <a href="" class="font-semibold text-[#172E80]">Resources</a>
+                <a href="" class="text-xs text-[#172E80]">Media</a>
+                <a href="" class="text-xs text-[#172E80]">FAQs</a>
+                <a href="" class="text-xs text-[#172E80]">Help Centre</a>
+                <a href="" class="text-xs text-[#172E80]">Security</a>
+            </div>
+            <!-- Contact Us -->
+            <div class="flex flex-col space-y-4 md:w-1/5">
+                <p class="font-semibold text-[#172E80]">Contact Us</p>
+                <a href="#" class="text-xs text-[#172E80]">www.fintekk.com</a>
+            </div>
+        </div>
+
+        <!-- Copyright Container -->
+        <div class="container mx-auto px-36 py-10 flex flex-col justify-between md:flex-row">
+            <div>
+                <p class="text-xs text-[#172E80]">Copyright &copy; 2022 fintekk. All rights reserved</p>
+            </div>
+            <p class="text-xs text-[#172E80]">Terms and Conditions. Privacy Policy</p>
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+<script src="js/main.js"></script>
+
+</html>
